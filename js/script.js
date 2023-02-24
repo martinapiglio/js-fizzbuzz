@@ -36,6 +36,9 @@ for (let i = 1; i <= 100; i++) {
     //create a new element div inside the HTML;
     let square = document.createElement('div');
 
+    //add a class to this element so that it can be targeted inside the css;
+    square.classList.add("square");
+
     //append all the elements div inside the container
     container.append(square);
     
@@ -67,4 +70,3 @@ for (let i = 1; i <= 100; i++) {
       }
 
 }
-

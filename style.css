@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+/* main */
 main {
   padding: 2em;
   font-family: sans-serif;
@@ -12,8 +13,25 @@ main {
   background-color: #083b4c;
 }
 
-h1 {
+main h1 {
   color: white;
   font-size: 3em;
   padding-bottom: .8em;
 }
+
+main .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
+}
+
+/* following the .square class added by js cript */
+main .container .square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: calc(100% / 7 - 10px);
+  aspect-ratio: 1; /* height equal to width */
+}
+/* /main */
