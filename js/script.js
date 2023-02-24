@@ -21,3 +21,26 @@
         ii - background-color is #1389b2;
 6 - append all the elements div inside the container
 */
+
+//create a container variable
+let container = document.querySelector('.container');
+
+//check
+console.log(container);
+console.log(container.innerHTML);
+//check
+
+//open a FOR cycle
+for (let i = 1; i <= 100; i++) {
+
+    //create a new element div inside the HTML;
+    let square = document.createElement('div');
+
+    //CHECK append the divs inside the containers 
+    container.append(square);
+    //CHECK divs number is correct
+    console.log(i);
+    //CHECK
+
+}
+
